@@ -11,9 +11,9 @@ const pillars = [
   { icon: Users, number: '04', title: 'Local Ownership', text: 'Ministry led by local people, sustained through true partnership.' },
 ];
 const work = [
-  { number: '01', title: 'Church Planting', label: 'Gospel communities', text: 'We help establish healthy, multiplying churches shaped by Scripture and deeply rooted in their neighbourhoods.', className: 'work-planting', image: '/work-church-planting.png', alt: 'A local church community gathering around Scripture' },
-  { number: '02', title: 'Leadership Development', label: 'Equipping leaders', text: 'We invest in pastors and emerging leaders through theological training, mentorship, and hands-on ministry formation.', className: 'work-leaders', image: '/work-leadership.png', alt: 'Emerging church leaders learning together around a table' },
-  { number: '03', title: 'Supporting Vulnerable Children', label: 'Compassion in action', text: 'Alongside local churches, we provide practical support and lasting relationships for children and families in need.', className: 'work-children', image: '/work-children.png', alt: 'Children taking part in a creative learning activity with a community volunteer' },
+  { number: '01', title: 'Church Planting', label: 'Gospel communities', text: 'We help establish healthy, multiplying churches shaped by Scripture and deeply rooted in their neighbourhoods.', className: 'work-planting', image: './work-church-planting.png', alt: 'A local church community gathering around Scripture' },
+  { number: '02', title: 'Leadership Development', label: 'Equipping leaders', text: 'We invest in pastors and emerging leaders through theological training, mentorship, and hands-on ministry formation.', className: 'work-leaders', image: './work-leadership.png', alt: 'Emerging church leaders learning together around a table' },
+  { number: '03', title: 'Supporting Vulnerable Children', label: 'Compassion in action', text: 'Alongside local churches, we provide practical support and lasting relationships for children and families in need.', className: 'work-children', image: './work-children.png', alt: 'Children taking part in a creative learning activity with a community volunteer' },
 ];
 const ways = [
   { icon: HeartHandshake, number: '01', title: 'Pray', text: 'Stand with our churches, leaders, and communities in faithful prayer.' },
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       <section className="magnify" id="magnify-church">
-        <div className="magnify-visual reveal"><img src="/magnify-easter-2027.png" alt="A South African congregation worshipping together at Magnify Church" loading="lazy" /><div className="magnify-rings" aria-hidden="true"><i /><i /><i /></div><div className="magnify-logo-live"><span className="magnify-ember" aria-hidden="true" /><img className="magnify-official-logo" src="/magnify-church-logo.jpg" alt="Magnify Church" loading="lazy" /></div><div className="launch-chip"><small>Public launch</small><b>Easter 2027</b></div></div>
+        <div className="magnify-visual reveal"><img src="./magnify-easter-2027.png" alt="A South African congregation worshipping together at Magnify Church" loading="lazy" /><div className="magnify-rings" aria-hidden="true"><i /><i /><i /></div><div className="magnify-logo-live"><span className="magnify-ember" aria-hidden="true" /><img className="magnify-official-logo" src="./magnify-church-logo.jpg" alt="Magnify Church" loading="lazy" /></div><div className="launch-chip"><small>Public launch</small><b>Easter 2027</b></div></div>
         <div className="magnify-copy reveal"><div className="section-index">03 — Featured church plant</div><p className="eyebrow-dark">Cape Town, South Africa</p><h2>Meet<br /><em>Magnify Church.</em></h2><p className="body-large">A new gospel-centered church being planted in Cape Town to magnify Jesus, make disciples, and multiply faithful communities.</p><div className="magnify-stats"><div><b>Jesus</b><span>Magnified</span></div><div><b>Disciples</b><span>Made</span></div><div><b>Churches</b><span>Multiplied</span></div></div><a className="button button-dark" href="#contact">Explore Magnify <ArrowUpRight size={17} /></a></div>
       </section>
 
