@@ -48,7 +48,7 @@ export default function Home() {
       </header>
 
       <section className="hero" id="home">
-        <div className="hero-image" aria-hidden="true" /><div className="hero-wash" aria-hidden="true" /><div className="hero-orbit orbit-one" aria-hidden="true" /><div className="hero-orbit orbit-two" aria-hidden="true" />
+        <div className="hero-image" style={{ backgroundImage: "url('./cape-town-hero.png')" }} aria-hidden="true" /><div className="hero-wash" aria-hidden="true" /><div className="hero-orbit orbit-one" aria-hidden="true" /><div className="hero-orbit orbit-two" aria-hidden="true" />
         <div className="hero-content"><p className="eyebrow"><span /> Cape Town · South Africa</p><h1>Christ proclaimed.<br />Leaders equipped.<br /><em>Churches planted.</em></h1><p className="hero-copy">We equip local leaders, plant gospel-centered churches, and serve vulnerable communities across Southern Africa.</p><div className="hero-actions"><a className="button button-primary" href="#about">Our mission <ArrowDown size={17} /></a><a className="button button-ghost" href="#get-involved">Partner with us <ArrowUpRight size={17} /></a></div></div>
         <div className="hero-side-note" aria-hidden="true">Serving the local church · Since 2019</div><div className="scroll-cue"><span>Explore</span><i /></div>
       </section>
