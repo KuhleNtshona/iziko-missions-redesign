@@ -95,3 +95,11 @@ footer{padding:70px clamp(22px,7vw,110px) 32px;background:#0c130f}.footer-top{di
   footer{padding:58px 20px 28px}.footer-top{padding-bottom:40px}.mailing{text-align:left}.footer-bottom div{flex-wrap:wrap;gap:14px 20px}.nonprofit{text-align:left;line-height:1.6}
   .about-nav{height:68px;padding-inline:16px}.about-nav .give-button{padding:10px 14px}.about-hero-copy{padding:0 20px 75px}.about-hero h1,.team-hero h1,.involved-hero h1{font-size:clamp(45px,13vw,62px)}.origin-grid{margin-bottom:60px}.origin-symbol{min-height:120px}.story-photo{min-height:380px}.story-copy{padding:70px 20px}.founder-section{padding-inline:20px}.values-list article{padding:26px}.team-hero,.involved-hero{min-height:68svh;padding:130px 20px 70px}.team-intro,.problem-statement{padding:72px 20px}.team-intro blockquote{font-size:36px}.team-grid{padding:0 20px 80px}.team-grid article{padding:55px 0}.team-grid h2{font-size:46px}.checks{padding:70px 20px}.problem-statement h2{font-size:36px}
 }
+
+/* Team portraits */
+.team-portrait{position:relative;overflow:hidden;isolation:isolate}
+.team-portrait img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;filter:saturate(.86) contrast(1.03);transition:transform .7s cubic-bezier(.2,.75,.2,1),filter .4s}
+.team-portrait::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(9,15,11,.26));pointer-events:none}
+.team-grid article:hover .team-portrait img{transform:scale(1.025);filter:saturate(1) contrast(1.03)}
+.team-portrait.sive img{object-position:center 32%}.team-portrait.khuthala img{object-position:center 28%}
+@media(max-width:560px){.team-portrait img{min-height:360px}.team-portrait{aspect-ratio:4/5}}
