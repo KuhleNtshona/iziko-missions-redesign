@@ -59,6 +59,13 @@ export default function Home() {
         <div className="pillars-grid">{pillars.map(({ icon: Icon, ...pillar }) => <article className="pillar reveal" key={pillar.number}><div className="pillar-top"><Icon size={25} strokeWidth={1.4} /><span>{pillar.number}</span></div><h3>{pillar.title}</h3><p>{pillar.text}</p></article>)}</div>
       </section>
 
+      <section className="hearth-story" aria-labelledby="hearth-title">
+        <img src="./iziko-hearth.jpg" alt="A South African family gathered in a circle around a fire, sharing stories" loading="lazy" />
+        <div className="hearth-shade" aria-hidden="true" />
+        <div className="hearth-copy reveal"><div className="section-index inverted">The meaning of Iziko</div><p className="hearth-word">Iziko <span>— isiXhosa</span></p><h2 id="hearth-title">Gathered around<br/><em>the centre.</em></h2><p>In many South African villages, families gathered around the fire while elders shared stories, wisdom, and truth. The hearth was a place of warmth, belonging, and formation.</p><p>That picture shapes our name. At Iziko, Christ is at the centre—and we gather around him to hear his Word, form faithful leaders, strengthen families, and carry the gospel into our communities.</p></div>
+        <div className="hearth-caption" aria-hidden="true"><span>Warmth</span><i/><span>Story</span><i/><span>Belonging</span></div>
+      </section>
+
       <section className="work-section" id="our-work">
         <div className="section-heading reveal"><div><div className="section-index inverted">02 — Our work</div><h2>One mission.<br /><em>Three expressions.</em></h2></div><p>We focus our energy where the gospel and practical compassion meet—forming leaders, gathering churches, and caring for those most vulnerable.</p></div>
         <div className="work-grid">{work.map((item) => <article className={`work-card ${item.className} reveal`} key={item.number}><div className="work-art"><img src={item.image} alt={item.alt} loading="lazy" /></div><div className="work-card-content"><div className="work-meta"><span>{item.number}</span><small>{item.label}</small></div><h3>{item.title}</h3><p>{item.text}</p><a href="#contact" aria-label={`Learn more about ${item.title}`}><ArrowUpRight /></a></div></article>)}</div>
