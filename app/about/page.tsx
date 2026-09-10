@@ -1,4 +1,5 @@
-import { ArrowLeft, ArrowRight, BookOpen, Church, Flame, HandHeart, HeartHandshake, Users } from 'lucide-react';
+import { ArrowRight, BookOpen, Church, Flame, HandHeart, HeartHandshake, Users } from 'lucide-react';
+import SubpageNav from '@/components/SubpageNav';
 
 const values = [
   { icon: BookOpen, title: 'Bible-Based', text: 'Scripture shapes what we believe, how we live, and how we serve.' },
@@ -9,7 +10,7 @@ const values = [
 
 export default function AboutPage() {
   return <main className="about-page">
-    <header className="about-nav"><a className="brand" href="../#home"><span className="brand-mark"><i/><i/><i/></span><span>IZIKO <b>MISSIONS</b></span></a><a className="back-home" href="../#home"><ArrowLeft size={16}/> Back home</a><a className="give-button" href="https://www.zeffy.com/en-US/donation-form/support-the-nogadas" target="_blank" rel="noopener noreferrer">Give</a></header>
+    <SubpageNav/>
     <section className="about-hero"><div className="about-hero-photo" style={{ backgroundImage: "url('../cape-town-hero.png')" }}/><div className="about-hero-shade"/><div className="about-hero-copy"><p>Our story · Our conviction</p><h1>A fire for the gospel.<br/><em>A home for mission.</em></h1><span>Iziko Missions exists to see Christ-centred churches and leaders flourish across South Africa.</span></div></section>
     <section className="about-origin"><div className="about-label">01 — Why Iziko</div><div className="origin-grid"><h2>A gathering place of <em>warmth, truth, and spiritual life.</em></h2><div><p className="origin-lead">“Iziko” is an isiXhosa word for a firepit—the centre of the home, where fire burns and community gathers.</p><p>We believe the local church should be just that: a place centred on the gospel of Jesus Christ, where people find belonging, grow in truth, and carry his light into their communities.</p></div></div><div className="origin-symbol"><Flame/><span>IZIKO</span><small>The hearth · The centre · The gathering place</small></div></section>
     <section className="about-story"><div className="story-photo"><img src="../work-leadership.png" alt="Local ministry leaders studying together"/></div><div className="story-copy"><div className="about-label light">02 — Our story</div><h2>Born from a burden for the <em>local church.</em></h2><p>Iziko Missions South Africa was born from a deep desire to see Christ-centred churches planted in the townships and cities of South Africa—led by local leaders and grounded in sound doctrine.</p><p>After more than fifteen years in ministry and community development, Sive Nogada became convinced that lasting transformation must keep Jesus and his Word at the centre.</p><div className="story-principles"><span><Church/> Churches planted</span><span><Users/> Leaders raised</span><span><HandHeart/> Children supported</span></div></div></section>

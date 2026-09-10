@@ -1,7 +1,8 @@
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import SubpageNav from '@/components/SubpageNav';
 
 export default function TeamPage(){return <main className="team-page">
-  <header className="about-nav"><a className="brand" href="../"><span className="brand-mark"><i/><i/><i/></span><span>IZIKO <b>MISSIONS</b></span></a><a className="back-home" href="../"><ArrowLeft size={16}/> Back home</a><a className="give-button" href="https://www.zeffy.com/en-US/donation-form/support-the-nogadas" target="_blank" rel="noopener noreferrer">Give</a></header>
+  <SubpageNav/>
   <section className="team-hero"><p>Meet the team</p><h1>Local leaders.<br/><em>Gospel conviction.</em></h1><span>Serving pastors, churches, and children in South Africa’s townships and rural areas.</span></section>
   <section className="team-intro"><div className="about-label">The people behind the mission</div><blockquote>“How do we support pastors already on the front lines?”</blockquote><p>Iziko identifies and equips faithful local leaders so they can preach, raise disciples, and care for vulnerable children—without building long-term dependence on foreign support.</p></section>
   <section className="team-grid">

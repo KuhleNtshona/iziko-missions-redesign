@@ -105,3 +105,7 @@ footer{padding:70px clamp(22px,7vw,110px) 32px;background:#0c130f}.footer-top{di
 .team-grid article:hover .team-portrait img{transform:scale(1.025);filter:saturate(1) contrast(1.03)}
 .team-portrait.sive img{object-position:center 32%}.team-portrait.khuthala img{object-position:center 28%}
 @media(max-width:560px){.team-portrait img{min-height:360px}.team-portrait{aspect-ratio:4/5}}
+
+/* Consistent navigation and compact portraits on inner pages */
+@media(max-width:1050px){.about-nav{grid-template-columns:1fr auto auto}.about-nav .back-home{display:none}.about-nav .menu-button{display:grid}.about-nav .mobile-nav{z-index:20}}
+@media(max-width:640px){.about-nav{grid-template-columns:1fr auto}.about-nav .give-button{display:none}.team-portrait{width:min(76vw,290px);min-height:0;aspect-ratio:1/1;margin-inline:auto;border-radius:8px}.team-portrait img{min-height:0}.team-portrait.sive img{object-position:center 28%}.team-portrait.khuthala img{object-position:center 25%}}
