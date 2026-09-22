@@ -17,7 +17,7 @@ export default function SubpageNav() {
   const [open, setOpen] = useState(false);
 
   return <header className="about-nav">
-    <a className="brand" href="../" aria-label="Iziko Missions home"><span className="brand-mark" aria-hidden="true"><i/><i/><i/></span><span>IZIKO <b>MISSIONS</b></span></a>
+    <a className="brand brand-3d" href="../" aria-label="Iziko Missions home"><span className="brand-3d-crop"><img src="../iziko-emblem-3d.png" alt="" aria-hidden="true" /></span><span>IZIKO <b>MISSIONS</b></span></a>
     <a className="back-home" href="../"><ArrowLeft size={16}/> Back home</a>
     <a className="give-button" href="https://www.zeffy.com/en-US/donation-form/support-the-nogadas" target="_blank" rel="noopener noreferrer">Give</a>
     <button className="menu-button" type="button" aria-label="Toggle navigation menu" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X/> : <Menu/>}</button>
