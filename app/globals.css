@@ -112,3 +112,25 @@ footer{padding:70px clamp(22px,7vw,110px) 32px;background:#0c130f}.footer-top{di
 /* Consistent navigation and compact portraits on inner pages */
 @media(max-width:1050px){.about-nav{grid-template-columns:1fr auto auto}.about-nav .back-home{display:none}.about-nav .menu-button{display:grid}.about-nav .mobile-nav{z-index:20}}
 @media(max-width:640px){.about-nav{grid-template-columns:1fr auto}.about-nav .give-button{display:none}.team-portrait{width:min(76vw,290px);min-height:0;aspect-ratio:1/1;margin-inline:auto;border-radius:8px}.team-portrait img{min-height:0}.team-portrait.sive img{object-position:center 28%}.team-portrait.khuthala img{object-position:center 25%}}
+
+/* Keep the newsletter's emphasized line legible against the amber panel. */
+.newsletter h2 em{color:#17352a}
+
+.origin-emblem{width:clamp(76px,8vw,118px);height:clamp(76px,8vw,118px);object-fit:contain;filter:drop-shadow(0 14px 24px rgba(33,21,12,.2));transform:scale(1.08)}
+@media(max-width:520px){.origin-emblem{width:72px;height:72px}.origin-symbol{gap:16px}.origin-symbol span{font-size:36px;letter-spacing:.12em}}
+
+/* Ministry philosophy */
+.philosophy-section{padding:clamp(90px,11vw,165px) clamp(22px,8vw,125px);background:#f2eadf;color:var(--ink)}
+.philosophy-heading{display:grid;grid-template-columns:1.08fr .72fr;gap:clamp(45px,9vw,140px);align-items:end;margin:48px 0 78px}
+.philosophy-heading h2{font:400 clamp(46px,5.8vw,84px)/.98 Georgia,serif;letter-spacing:-.045em;margin:0}
+.philosophy-heading h2 em{font-weight:400;color:#b86d33}
+.philosophy-heading p{max-width:440px;margin:0;color:#6e665c;font-size:15px;line-height:1.75}
+.philosophy-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #cfc2b1;border-bottom:1px solid #cfc2b1}
+.philosophy-grid article{min-height:390px;padding:34px clamp(24px,3vw,44px);border-right:1px solid #cfc2b1;display:flex;flex-direction:column}
+.philosophy-grid article:last-child{border-right:0}
+.philosophy-grid article>div{display:flex;align-items:center;justify-content:space-between;color:#a45f2d}
+.philosophy-grid article>div span{font-size:9px;letter-spacing:.16em;color:#968b7d}
+.philosophy-grid h3{font:400 clamp(27px,2.5vw,36px) Georgia,serif;margin:auto 0 18px}
+.philosophy-grid p{font-size:13px;line-height:1.75;color:#6e665c;margin:0}
+@media(max-width:800px){.philosophy-heading{grid-template-columns:1fr;align-items:start}.philosophy-grid{grid-template-columns:1fr}.philosophy-grid article{min-height:280px;border-right:0;border-bottom:1px solid #cfc2b1}.philosophy-grid article:last-child{border-bottom:0}}
+@media(max-width:640px){.philosophy-section{padding:78px 20px}.philosophy-heading{gap:24px;margin:38px 0 52px}.philosophy-grid article{min-height:250px;padding:28px 24px}.philosophy-grid h3{font-size:30px}}

@@ -11,7 +11,7 @@ const pillars = [
   { icon: Users, number: '04', title: 'Local Ownership', text: 'Ministry led by local people, sustained through true partnership.' },
 ];
 const work = [
-  { number: '01', title: 'Church Planting', label: 'Gospel communities', text: 'We help establish healthy, multiplying churches shaped by Scripture and deeply rooted in their neighbourhoods.', className: 'work-planting', image: './work-church-planting.png', alt: 'A local church community gathering around Scripture' },
+  { number: '01', title: 'Church Planting', label: 'Gospel communities', text: 'We help establish healthy, multiplying churches shaped by Scripture and deeply rooted in the gospel.', className: 'work-planting', image: './work-church-planting.png', alt: 'A local church community gathering around Scripture' },
   { number: '02', title: 'Leadership Development', label: 'Equipping leaders', text: 'We invest in pastors and emerging leaders through theological training, mentorship, and hands-on ministry formation.', className: 'work-leaders', image: './work-leadership.png', alt: 'Emerging church leaders learning together around a table' },
   { number: '03', title: 'Supporting Vulnerable Children', label: 'Compassion in action', text: 'Alongside local churches, we provide practical support and lasting relationships for children and families in need.', className: 'work-children', image: './work-children.png', alt: 'Children taking part in a creative learning activity with a community volunteer' },
 ];
@@ -49,13 +49,13 @@ export default function Home() {
 
       <section className="hero" id="home">
         <div className="hero-image" style={{ backgroundImage: "url('./cape-town-hero.png')" }} aria-hidden="true" /><div className="hero-wash" aria-hidden="true" /><div className="hero-orbit orbit-one" aria-hidden="true" /><div className="hero-orbit orbit-two" aria-hidden="true" />
-        <div className="hero-content"><div className="mobile-brand-reveal"><img src="./iziko-emblem-3d.png" alt="Iziko Missions fire and community emblem" /></div><p className="eyebrow"><span /> Cape Town · South Africa</p><h1>Christ proclaimed.<br />Leaders equipped.<br /><em>Churches planted.</em></h1><p className="hero-copy">We equip local leaders, plant gospel-centered churches, and serve vulnerable communities across South Africa.</p><div className="hero-actions"><a className="button button-primary" href="#about">Our mission <ArrowDown size={17} /></a><a className="button button-ghost" href="./get-involved/">Partner with us <ArrowUpRight size={17} /></a></div></div>
-        <div className="hero-side-note" aria-hidden="true">Serving the local church · Since 2019</div><div className="scroll-cue"><span>Explore</span><i /></div>
+        <div className="hero-content"><div className="mobile-brand-reveal"><img src="./iziko-emblem-3d.png" alt="Iziko Missions fire and community emblem" /></div><p className="eyebrow"><span /> Cape Town · South Africa</p><h1>Christ proclaimed.<br />Leaders equipped.<br /><em>Churches planted.</em></h1><p className="hero-copy">To plant Christ-centered churches, raise leaders with conviction, and support vulnerable children.</p><div className="hero-actions"><a className="button button-primary" href="#about">Our mission <ArrowDown size={17} /></a><a className="button button-ghost" href="./get-involved/">Partner with us <ArrowUpRight size={17} /></a></div></div>
+        <div className="hero-side-note" aria-hidden="true">Serving the local church · Since 2025</div><div className="scroll-cue"><span>Explore</span><i /></div>
       </section>
 
       <section className="intro section-light" id="about">
         <div className="section-index reveal">01 — Our mission</div>
-        <div className="intro-grid reveal"><p className="kicker">The gospel moves<br />through people.</p><div><h2>Strengthening the local church from the <em>inside out.</em></h2><p className="body-large">Iziko means “hearth” in isiXhosa—a gathering place of warmth, story, and belonging. We partner with local leaders so communities can flourish around the hope of Jesus.</p><a className="text-link" href="#our-work">Discover our approach <ArrowRight size={17} /></a></div></div>
+        <div className="intro-grid reveal"><p className="kicker">The gospel moves<br />through people.</p><div><h2>Strengthening the local church from the <em>inside out.</em></h2><p className="body-large">Iziko means “hearth” in isiXhosa—a gathering place of warmth, wisdom, and community. With Christ and his Word at the centre, we equip local leaders so churches and families can flourish around the hope of the gospel.</p><a className="text-link" href="./about/">Discover our approach <ArrowRight size={17} /></a></div></div>
         <div className="pillars-grid">{pillars.map(({ icon: Icon, ...pillar }) => <article className="pillar reveal" key={pillar.number}><div className="pillar-top"><Icon size={25} strokeWidth={1.4} /><span>{pillar.number}</span></div><h3>{pillar.title}</h3><p>{pillar.text}</p></article>)}</div>
       </section>
 
